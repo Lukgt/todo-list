@@ -14,6 +14,9 @@
   color: #F2F2F2;
   font-size: 0.875rem;
   line-height: 1.4;
+  max-width: 37.75rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .task-item.completed p {
