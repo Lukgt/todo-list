@@ -1,4 +1,4 @@
-import { Task, TaskItem } from '../TaskItem';
+import { Task, TaskItem } from '../TaskItem/TaskItem';
 import { ClipboardText } from 'phosphor-react';
 import './styles.css';
 

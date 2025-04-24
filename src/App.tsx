@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Header } from './components/Header';
-import { TaskForm } from './components/TaskForm';
-import { TaskList } from './components/TaskList';
-import { Task } from './components/TaskItem';
+import { Header } from './components/Header/Header';
+import { TaskForm } from './components/TaskForm/TaskForm';
+import { TaskList } from './components/TaskList/TaskList';
+import { Task } from './components/TaskItem/TaskItem';
 import './global.css';
 
 function App() {
@@ -38,7 +38,7 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       <Header />
       
       <TaskForm onAddTask={handleAddTask} />
@@ -48,7 +48,7 @@ function App() {
         onDeleteTask={handleDeleteTask}
         onToggleTaskCompletion={handleToggleTaskCompletion}
       />
-    </div>
+    </>
   );
 }
 
