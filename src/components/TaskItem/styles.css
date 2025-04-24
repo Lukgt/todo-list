@@ -1,0 +1,70 @@
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  background: #262626;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.task-item p {
+  flex: 1;
+  color: #F2F2F2;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.task-item.completed p {
+  color: #808080;
+  text-decoration: line-through;
+}
+
+.check-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.check-container {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 50%;
+  border: 2px solid #4EA8DE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.task-item.completed .check-container {
+  background: #5E60CE;
+  border-color: #5E60CE;
+  color: #F2F2F2;
+}
+
+.check-button:hover .check-container {
+  background: rgba(94, 96, 206, 0.2);
+  border-color: #5E60CE;
+}
+
+.delete-button {
+  background: transparent;
+  border: none;
+  color: #808080;
+  cursor: pointer;
+  line-height: 0;
+  border-radius: 4px;
+  padding: 0.25rem;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.delete-button:hover {
+  color: #E25858;
+  background: rgba(226, 88, 88, 0.1);
+}
